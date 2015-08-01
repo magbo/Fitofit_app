@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Distances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>address 1</th>
+      <th>address 2</th>
+      <th>distance</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @distances.each do |distance| %>
+      <tr>
+        <td><%= distance.locations.first ? distance.locations.first.address : 'brak' %></td>
+        <td><%= distance.locations.last ? distance.locations.last.address : 'brak' %></td>
+        <td><%= distance.distance_in_km ? distance.distance_in_km.round(2) : 'brak' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Distance', new_location_path %>
