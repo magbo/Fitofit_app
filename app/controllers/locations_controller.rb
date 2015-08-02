@@ -1,4 +1,5 @@
 class LocationsController < ApplicationController
+  skip_before_action :verify_authenticity_token, only: [:create]
   def new
     @location = Location.new
   end
@@ -6,9 +7,6 @@ class LocationsController < ApplicationController
   def create
     start_point = params['location']['address']['1']
     end_point = params['location']['address']['2']
-
-    puts start_point
-    puts end_point
 
     if !start_point.empty? && !end_point.empty?
 
