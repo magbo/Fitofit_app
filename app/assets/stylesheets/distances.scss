@@ -1,3 +1,122 @@
 // Place all the styles related to the Distances controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  margin:0;
+  padding:0;
+  border: 0 none;
+  position: relative;
+}
+html {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background: image-url("road.jpg") no-repeat center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  margin: 40px 0 5px 0;
+  font-size: 50px;
+  line-height: 7rem;
+  font-weight: 100;
+  text-align: center;
+  z-index: -1;
+}
+
+table {
+    width: 70%;
+	background-color: rgba(255,255,255,0.9);
+	padding: 20px;
+	margin: auto;
+}
+
+.headline {
+  margin: 0 0 10px 0;
+  font-size: 25px;
+  line-height: 7rem;
+  font-weight: 100;
+  text-align: center;	
+}
+
+form {
+  box-sizing: border-box;
+  background-color: rgba(255,255,255,0.9);
+  width: 33%;
+  margin-left: 100px;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.btn_box {
+
+  margin-top: 80px ;
+  margin-left: 100px;
+  width: 200px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+#btn_new {
+
+	position: absolute;
+    left: 50px;
+    top: 50px
+	}
+
+#btn_stats {
+
+	position: absolute;
+    left: 50px;
+    top: 100px
+	}
+
+
+input {
+  width: 80px;
+  height: 30px;	
+}
+input,
+textarea {
+  background-color: rgb(192,192,192);
+  width: 100%;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+.address_input {
+  margin-top: 50px;
+  font-size: 20px;
+	
+}
+
+.link a {
+   height: 60px;
+   width: 200px;
+   background-color: rgb(192,192,192);
+   padding: 10px;
+   cursor: pointer;
+   text-align: center;
+   font-size: 15px;
+   text-decoration: none;
+   font-size: 15px;
+   border-radius: 4px;
+   margin: auto;
+}
+
+
+#info_distance {
+ size: 25px;
+ width: 33%;
+ padding: 5 px;
+}
+
+#info_distance p {
+ font-size : 15px;		
+}

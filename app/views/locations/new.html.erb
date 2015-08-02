@@ -1,7 +1,10 @@
-<h2>Check the distance of your route:</h2> 
+<p class="headline">Check the distance of your route</p> 
 
 <p>Please enter:</p>
 
+<div>
 <%= render 'form' %>
-
-<%= link_to 'Back', distances_path %>
+</div>
+<div class="link" id="btn_stats">
+  <%= link_to 'Go to 7-day stats', distances_path %>
+</div>  

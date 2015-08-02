@@ -1,7 +1,10 @@
-<p>Twoj dystans: <%= @distance.distance_in_km %> </p>
-<p>stat: <%= @stats_7_days %> </p>
-
-<%=link_to "Stworz nowy dystans", new_location_path %>
-<%=link_to "przejdz do stat:", distances_path %>
-
-
+<section id="info_distance">
+<p>The distance is: <%= @distance.distance_in_km %> km</p>
+<p> Km made within a week: <%= @stats_7_days %></p>
+</section>
+<div  class="link" id="btn_new">
+	<%=link_to "Calculate another distance", new_location_path %>
+</div>
+<div  class="link" id="btn_stats">
+	<%=link_to "Go to 7-day stats", distances_path %>
+</div>

@@ -1,13 +1,13 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p> -->
 
-<h1>Listing Distances</h1>
+<p class="headline">Your Week Stats</p>
 
 <table>
   <thead>
     <tr>
-      <th>address 1</th>
-      <th>address 2</th>
-      <th>distance</th>
+      <th>Starting point</th>
+      <th>Finish point</th>
+      <th>Distance</th>
     </tr>
   </thead>
 
@@ -16,7 +16,7 @@
       <tr>
         <td><%= distance.locations.first ? distance.locations.first.address : 'brak' %></td>
         <td><%= distance.locations.last ? distance.locations.last.address : 'brak' %></td>
-        <td><%= distance.distance_in_km ? distance.distance_in_km.round(2) : 'brak' %></td>
+        <td><%= distance.distance_in_km ? distance.distance_in_km.round(2) : 'brak' %> km</td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,6 @@
 
 <br>
 
-<%= link_to 'New Distance', new_location_path %>
+<div  class="link" id="btn_stats">
+  <%= link_to 'Calculate New Distance', new_location_path %>
+</div>
